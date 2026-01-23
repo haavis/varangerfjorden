@@ -1,9 +1,9 @@
 {
   "Author": "NotNite",
-  "Name": "Distant Seas",
+  "Name": "Distant Seas (Test)",
   "Punchline": "The ultimate Ocean Fishing plugin.",
   "Description": "The ultimate Ocean Fishing plugin. Automatically suggests baits, logs each boat you're on, tracks progress to achievements, adds a global point leaderboard, and more!\n\nIcon from the Mutant Standard project.",
-  "InternalName": "DistantSeas",
+  "InternalName": "DistantSeasTest",
   "IconUrl": "https://raw.githubusercontent.com/haavis/varangerfjorden/main/Data/icon.png",
   "RepoUrl": "https://github.com/haavis/varangerfjorden",
   "ApplicableVersion": "any",
