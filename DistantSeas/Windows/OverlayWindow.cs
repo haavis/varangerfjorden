@@ -205,7 +205,8 @@ public class OverlayWindow : DistantSeasWindow {
             var done = mission.Progress >= mission.Total;
             if (done && Plugin.Configuration.HideFinishedMissions) continue;
 
-            ImGui.TextUnformatted($"{mission.Objective}: {mission.Progress}/{mission.Total}");
+            // Debug: show row ID
+            ImGui.TextUnformatted($"[{mission.Row}] {mission.Objective}: {mission.Progress}/{mission.Total}");
             drewOne = true;
         }
 

@@ -5,7 +5,7 @@
     "Punchline": "The ultimate Ocean Fishing plugin.",
     "Description": "The ultimate Ocean Fishing plugin. Automatically suggests baits, logs each boat you're on, tracks progress to achievements, adds a global point leaderboard, and more!",
     "InternalName": "Varangerfjorden",
-    "AssemblyVersion": "1.1.0.6",
+    "AssemblyVersion": "1.1.0.7",
     "RepoUrl": "https://github.com/haavis/varangerfjorden",
     "IconUrl": "https://raw.githubusercontent.com/haavis/varangerfjorden/main/Data/icon.png",
     "ApplicableVersion": "any",
@@ -14,7 +14,7 @@
       "fishing"
     ],
     "DalamudApiLevel": 14,
-    "DownloadLinkInstall": "https://github.com/haavis/varangerfjorden/releases/download/v1.1.0.6/Varangerfjorden.zip",
-    "DownloadLinkUpdate": "https://github.com/haavis/varangerfjorden/releases/download/v1.1.0.6/Varangerfjorden.zip"
+    "DownloadLinkInstall": "https://github.com/haavis/varangerfjorden/releases/download/v1.1.0.7/Varangerfjorden.zip",
+    "DownloadLinkUpdate": "https://github.com/haavis/varangerfjorden/releases/download/v1.1.0.7/Varangerfjorden.zip"
   }
 ]
