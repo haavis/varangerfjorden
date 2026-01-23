@@ -1,0 +1,14 @@
+{
+  "Author": "haavis",
+  "Name": "Varangerfjorden",
+  "Punchline": "The ultimate Ocean Fishing plugin.",
+  "Description": "The ultimate Ocean Fishing plugin. Automatically suggests baits, logs each boat you're on, tracks progress to achievements, adds a global point leaderboard, and more!",
+  "InternalName": "Varangerfjorden",
+  "IconUrl": "https://raw.githubusercontent.com/haavis/varangerfjorden/main/Data/icon.png",
+  "RepoUrl": "https://github.com/haavis/varangerfjorden",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "ocean",
+    "fishing"
+  ]
+}

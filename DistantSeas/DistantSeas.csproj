@@ -2,6 +2,7 @@
 <Project Sdk="Dalamud.NET.Sdk/14.0.1">
     <PropertyGroup>
         <Version>1.1.0.6</Version>
+        <AssemblyName>Varangerfjorden</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
