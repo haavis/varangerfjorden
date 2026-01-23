@@ -1,0 +1,20 @@
+[
+  {
+    "Author": "haavis",
+    "Name": "Distant Seas",
+    "Punchline": "The ultimate Ocean Fishing plugin.",
+    "Description": "The ultimate Ocean Fishing plugin. Automatically suggests baits, logs each boat you're on, tracks progress to achievements, adds a global point leaderboard, and more!",
+    "InternalName": "DistantSeas",
+    "AssemblyVersion": "1.1.0.5",
+    "RepoUrl": "https://github.com/haavis/varangerfjorden",
+    "IconUrl": "https://raw.githubusercontent.com/haavis/varangerfjorden/main/Data/icon.png",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "ocean",
+      "fishing"
+    ],
+    "DalamudApiLevel": 14,
+    "DownloadLinkInstall": "https://github.com/haavis/varangerfjorden/releases/download/v1.1.0.5/DistantSeas.zip",
+    "DownloadLinkUpdate": "https://github.com/haavis/varangerfjorden/releases/download/v1.1.0.5/DistantSeas.zip"
+  }
+]
