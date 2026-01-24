@@ -11,7 +11,7 @@ public class Configuration : IPluginConfiguration {
     [JsonProperty] public string? LanguageOverride = null;
 
     [JsonProperty] public bool ShowOverlay = true;
-    [JsonProperty] public bool LockOverlay = true;
+    [JsonProperty] public bool LockOverlay = false;
     [JsonProperty] public bool OnlyDrawHeader = false;
     [JsonProperty] public bool HideVanillaOverlay = false;
     [JsonProperty] public bool ScrollFish = true;

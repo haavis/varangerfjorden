@@ -34,11 +34,12 @@ public class OverlayWindow : DistantSeasWindow {
     public override void PreDraw() {
         this.Flags = ImGuiWindowFlags.NoDocking | ImGuiWindowFlags.NoFocusOnAppearing;
         if (!Plugin.Configuration.ResizingOverlay) {
-            this.Flags |= ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoDecoration;
+            // Use individual flags instead of NoDecoration to preserve title bar for moving
+            this.Flags |= ImGuiWindowFlags.AlwaysAutoResize | ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoCollapse;
         }
 
         if (Plugin.Configuration.LockOverlay) {
-            this.Flags |= ImGuiWindowFlags.NoMove;
+            this.Flags |= ImGuiWindowFlags.NoMove | ImGuiWindowFlags.NoTitleBar;
         }
 
         this.tinting = Plugin.Configuration.DrawSpectralColors && Plugin.StateTracker.IsSpectralActive;
