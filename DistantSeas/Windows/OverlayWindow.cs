@@ -201,6 +201,15 @@ public class OverlayWindow : DistantSeasWindow {
         var state = Plugin.StateTracker;
         var drewOne = false;
 
+        // Debug: Show raw struct values
+        unsafe {
+            var oceanFishing = FFXIVClientStructs.FFXIV.Client.Game.Event.EventFramework.Instance()->GetInstanceContentOceanFishing();
+            if (oceanFishing != null) {
+                ImGui.TextUnformatted($"Raw: M1={oceanFishing->Mission1Type} M2={oceanFishing->Mission2Type} M3={oceanFishing->Mission3Type}");
+                ImGui.TextUnformatted($"Progress: P1={oceanFishing->Mission1Progress} P2={oceanFishing->Mission2Progress} P3={oceanFishing->Mission3Progress}");
+            }
+        }
+
         foreach (var mission in state.MissionState) {
             var done = mission.Progress >= mission.Total;
             if (done && Plugin.Configuration.HideFinishedMissions) continue;
