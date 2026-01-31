@@ -122,7 +122,13 @@ public unsafe class NormalStateTracker : IStateTracker {
             this.IsSpectralActive = oceanFishing->SpectralCurrentActive;
 
             if (oceanFishing->Mission1Type != 0) {
-                if (this.MissionState.Count <= 0) {
+                // Recreate missions if empty OR if mission types have changed (new trip)
+                var needsRecreate = this.MissionState.Count <= 0 ||
+                    this.MissionState[0].Row != oceanFishing->Mission1Type ||
+                    this.MissionState[1].Row != oceanFishing->Mission2Type ||
+                    this.MissionState[2].Row != oceanFishing->Mission3Type;
+
+                if (needsRecreate) {
                     this.MissionState = new List<MissionState> {
                         new(oceanFishing->Mission1Type),
                         new(oceanFishing->Mission2Type),
